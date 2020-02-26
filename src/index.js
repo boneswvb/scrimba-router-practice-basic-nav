@@ -1,0 +1,26 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {BrowserRouter as Router} from "react-router-dom"
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+
+ReactDOM.render(
+	<Router>
+		<App />
+	</Router>, 
+	document.getElementById('root')
+	);
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
+
+/**
+ * Challenge:
+ * 
+ * 1. Set up React Router
+ * 2. Add Home, About, and Contact pages to this app
+ * 3. Add a nav bar to easily navigate to those pages
+ */
